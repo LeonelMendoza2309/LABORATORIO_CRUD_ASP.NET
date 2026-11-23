@@ -4,8 +4,6 @@ Aplicación web CRUD desarrollada en **ASP.NET Web Forms** con C# y conectada a 
 
 ## Capturas de pantalla
 
-> Coloca aquí las imágenes del proyecto después de ejecutarlo.
-
 - **Pantalla principal:**  
  <img width="1365" height="442" alt="image" src="https://github.com/user-attachments/assets/6d371fce-5e43-4a10-be66-2c5d85435b3b" />
 
@@ -64,13 +62,11 @@ El proyecto incluye el archivo `dbCRUD.sql`, que crea:
 
 ### 1. Crear la base de datos
 
-Abre MySQL Workbench o una terminal de MySQL y ejecuta:
+Abrir MySQL Workbench o una terminal de MySQL y ejecuta:
 
 ```sql
 source dbCRUD.sql
 ```
-
-También puedes abrir el archivo `dbCRUD.sql` desde MySQL Workbench y ejecutar su contenido.
 
 ### 2. Configurar la conexión
 
@@ -87,8 +83,6 @@ actualiza la cadena de conexión dentro de `<connectionStrings>` con los datos d
      connectionString="Server=localhost;Database=dbCRUD;Uid=TU_USUARIO;Pwd=TU_CONTRASENA;"
      providerName="MySql.Data.MySqlClient" />
 ```
-
-No subas contraseñas reales a GitHub. Usa datos locales o variables de entorno según el entorno de despliegue.
 
 ### 3. Ejecutar el proyecto
 
