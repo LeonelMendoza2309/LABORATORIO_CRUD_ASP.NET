@@ -1,1 +1,128 @@
-# LABORATORIO_CRUD_ASP.NET
+# CRUD con ASP.NET y MySQL
+
+Aplicación web CRUD desarrollada en **ASP.NET Web Forms** con C# y conectada a una base de datos **MySQL**. Permite crear, consultar, actualizar y eliminar usuarios desde una interfaz web.
+
+## Capturas de pantalla
+
+> Coloca aquí las imágenes del proyecto después de ejecutarlo.
+
+- **Pantalla principal:**  
+  <!-- ![Listado de registros](ruta/listado.png) -->
+
+- **Crear usuario:**  
+  <!-- ![Crear usuario](ruta/crear.png) -->
+
+- **Consultar/Actualizar/Eliminar:**  
+  <!-- ![Operaciones CRUD](ruta/operaciones.png) -->
+
+## Funcionalidades
+
+- Crear un usuario.
+- Consultar el listado de usuarios.
+- Mostrar los datos de un usuario.
+- Actualizar nombre, edad, correo y fecha de nacimiento.
+- Eliminar un usuario.
+- Ejecutar las operaciones mediante procedimientos almacenados de MySQL.
+
+## Tecnologías utilizadas
+
+- C#
+- ASP.NET Web Forms
+- .NET Framework 4.7.2
+- MySQL
+- MySQL Connector/NET
+- Bootstrap
+- Visual Studio
+
+## Base de datos
+
+El proyecto incluye el archivo `dbCRUD.sql`, que crea:
+
+- La base de datos `dbCRUD`.
+- La tabla `Usuarios`.
+- Los procedimientos almacenados:
+  - `sp_load`: muestra todos los usuarios.
+  - `sp_create`: crea un usuario.
+  - `sp_read`: consulta un usuario por identificador.
+  - `sp_update`: actualiza los datos de un usuario.
+  - `sp_delete`: elimina un usuario.
+
+### Campos de la tabla Usuarios
+
+| Campo | Tipo | Descripción |
+|---|---|---|
+| Id_Usuario | INT, AUTO_INCREMENT | Identificador único |
+| Nombre | VARCHAR(15) | Nombre del usuario |
+| Edad | INT | Edad del usuario |
+| Correo | VARCHAR(200) | Correo electrónico |
+| Fecha_Nacimiento | DATE | Fecha de nacimiento |
+
+## Instalación
+
+### 1. Crear la base de datos
+
+Abre MySQL Workbench o una terminal de MySQL y ejecuta:
+
+```sql
+source dbCRUD.sql
+```
+
+También puedes abrir el archivo `dbCRUD.sql` desde MySQL Workbench y ejecutar su contenido.
+
+### 2. Configurar la conexión
+
+En el archivo:
+
+```text
+WEB HPA3/CRUD/Web.config
+```
+
+actualiza la cadena de conexión dentro de `<connectionStrings>` con los datos de tu servidor MySQL:
+
+```xml
+<add name="conexion"
+     connectionString="Server=localhost;Database=dbCRUD;Uid=TU_USUARIO;Pwd=TU_CONTRASENA;"
+     providerName="MySql.Data.MySqlClient" />
+```
+
+No subas contraseñas reales a GitHub. Usa datos locales o variables de entorno según el entorno de despliegue.
+
+### 3. Ejecutar el proyecto
+
+1. Abre `WEB HPA3/CRUD/CRUD.slnx` en Visual Studio.
+2. Restaura los paquetes NuGet si Visual Studio lo solicita.
+3. Ejecuta el proyecto con IIS Express.
+4. Abre la página `Pages/Index.aspx`.
+
+## Uso
+
+1. Haz clic en **Crear** para agregar un usuario.
+2. Completa el nombre, edad, correo y fecha de nacimiento.
+3. Usa **Leer** para consultar un registro.
+4. Usa **Actualizar** para modificar sus datos.
+5. Usa **Borrar** para eliminar el registro.
+
+## Estructura principal
+
+```text
+LABORATORIO_CRUD_ASP.NET/
+├── dbCRUD.sql
+└── WEB HPA3/
+    └── CRUD/
+        ├── Pages/
+        │   ├── Index.aspx
+        │   ├── CRUD.aspx
+        │   └── código C# asociado
+        ├── MP.Master
+        ├── Web.config
+        ├── CRUD.csproj
+        └── packages.config
+```
+
+## Autor
+
+Leonel Mendoza
+
+## Repositorio
+
+https://github.com/LeonelMendoza2309/LABORATORIO_CRUD_ASP.NET
