@@ -7,13 +7,16 @@ Aplicación web CRUD desarrollada en **ASP.NET Web Forms** con C# y conectada a 
 > Coloca aquí las imágenes del proyecto después de ejecutarlo.
 
 - **Pantalla principal:**  
-  <!-- ![Listado de registros](ruta/listado.png) -->
+ <img width="1365" height="442" alt="image" src="https://github.com/user-attachments/assets/6d371fce-5e43-4a10-be66-2c5d85435b3b" />
 
 - **Crear usuario:**  
-  <!-- ![Crear usuario](ruta/crear.png) -->
+<img width="1360" height="614" alt="image" src="https://github.com/user-attachments/assets/6a44ff81-cc82-4e92-9fa2-a7c9860e853c" />
 
 - **Consultar/Actualizar/Eliminar:**  
-  <!-- ![Operaciones CRUD](ruta/operaciones.png) -->
+<img width="492" height="570" alt="image" src="https://github.com/user-attachments/assets/e0616e95-913e-4cff-a49d-7ebbafd3a638" />
+<img width="485" height="546" alt="image" src="https://github.com/user-attachments/assets/46d76492-ba96-43f5-a59a-f11a284922bf" />
+<img width="485" height="545" alt="image" src="https://github.com/user-attachments/assets/b69bbffb-f41d-4509-91ae-0a4a4869f172" />
+
 
 ## Funcionalidades
 
@@ -122,7 +125,3 @@ LABORATORIO_CRUD_ASP.NET/
 ## Autor
 
 Leonel Mendoza
-
-## Repositorio
-
-https://github.com/LeonelMendoza2309/LABORATORIO_CRUD_ASP.NET
